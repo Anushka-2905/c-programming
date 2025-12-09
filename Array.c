@@ -55,6 +55,41 @@ for(int i = 0; i<5; i++) {
       max = a[i];
    }
 
+   4..finding even or odd numbers
+
+   #include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Entere how many numbers : ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Entered %d numbers :\n", n);
+    for(i = 0; i<n; i++)  {
+        scanf("%d", &arr[i]);
+    }
+   //print even numbers
+
+   printf("\nEven numbers are:\n");
+
+   for(i = 0; i<n; i++)  {
+    if (arr[i] % 2 == 0)  {
+        printf("%d\n", arr[i]);
+    }
+   }
+    // print odd numbers
+
+    printf("\nOdd numbers are:\n");
+
+    for(i = 0; i<n; i++)  {
+        if(arr[i] % 2 != 0) {
+            printf("%d\n", arr[i]);
+        }
+    }
+
+    return 0;
+}
+
 }
   printf("Largest = %d", max);
  return 0;
